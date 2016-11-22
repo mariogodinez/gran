@@ -1,0 +1,342 @@
+@import 'nib';
+
+gris_claro = #f4f3f3
+
+body
+	margin 0
+	padding 0
+	font-size 16px
+	font-family arial
+
+#main-header
+	background #000
+	color white
+
+#main-container
+	font-size 1em
+
+.table
+	margin 0
+	&-left
+		width 250px
+		&-header
+			background gris_claro
+			width 99.5%
+			height 2.5em
+			display flex
+			align-items center
+			justify-content center
+			border-bottom 1px solid #d3d3d3
+			border-right 1px solid #d3d3d3
+			&-input
+				width 90%
+				height 100%
+				height 20px
+
+.info
+	width 100%
+	height 60px
+	border-bottom 1px solid gris_claro
+	&-item
+		width 70px
+		border-right 1px solid #d3d3d3
+		display flex
+		p
+			margin 0
+			display flex
+			justify-content center
+			align-items center
+			text-align center
+			font-size .7em
+			width 100%
+		&:last-child 
+			width 50px
+			
+
+
+#info-data
+	width 100%
+	height 2em
+	border-bottom 1px solid gray
+	&:last-child
+		border-bottom 0
+	.info-item
+		border-right 1px solid #d3d3d3
+		p
+			background gris_claro
+			input
+				border 1px solid gray
+				width 80%
+				height 60%
+				border 1px solid gray
+		&:last-child 
+			width 3.2em
+			
+		
+
+			
+// .right2
+// 	margin 0
+// 	width 100%
+// 	.header
+// 		margin 0
+// 		background gris_claro
+// 		width 100%
+// 		height 2.5em
+// 		display flex
+// 		align-items center
+// 		justify-content center
+// 		border 1px solid #d3d3d3
+// 		border-top 0
+// 		border-left 0
+// 		&-title
+// 			display none
+// 			margin 0 
+// 		&-select
+// 			position relative
+// 			select
+// 				background #d8d8d8
+// 			&-icon
+// 				position absolute 
+// 				top 6px
+// 				right 5px
+// 	#sizes-data
+// 		height 2em !important
+// 		border-bottom 1px solid gray
+// 		&:last-child
+// 			border-bottom 0
+// 		.sizes-list
+// 			height 100% !important
+// 			p
+// 				background gris_claro
+// 			input
+// 				width 70%
+// 				height 1.7em
+// 				border 1px solid gray
+// 				position relative 
+// 				top 1px
+				
+// 	.sizes
+// 		width 100%
+// 		display flex
+// 		flex-direction column
+// 		justify-content center
+// 		height 60px
+// 		&-title
+// 			border-bottom 1px solid #d3d3d3
+// 			height 50%
+// 			display flex
+// 			align-items center
+// 			justify-content center
+// 			&-item
+// 				margin 0 20px
+// 				text-align center
+// 			span.fa
+// 				cursor pointer
+// 		&-list
+// 			margin 0
+// 			display flex
+// 			width 100%
+// 			height 50% 
+// 			justify-content center
+// 			align-items center
+// 			border-bottom 1px solid gris_claro
+// 			&-item
+// 				margin 0
+// 				width 11%
+// 				height 100%
+// 				p
+// 					margin 0
+// 					display flex
+// 					align-items center
+// 					justify-content center
+// 					height 100%
+// 					width 100%
+// 					span
+// 						border-right 1px solid #d3d3d3
+// 						width 50%
+// 						height 100%
+// 						display flex
+// 						justify-content center
+// 						align-items center
+// 				&:last-child
+// 					span
+// 						&:last-child 
+// 							border 0
+	// Mobile						
+.right
+	margin 0
+	width 100%
+	overflow hidden
+	.header
+		margin 0
+		background gris_claro
+		width 100%
+		height 2.5em
+		display flex
+		align-items center
+		justify-content center
+		border-top 0
+		border-left 0
+		&-title
+			display none
+			margin 0
+			 
+		&-select
+			position relative
+			select
+				background #d8d8d8
+			&-icon
+				position absolute 
+				top 6px
+				right 5px
+				
+	#sizes-data
+		height 2em !important
+		border-bottom 1px solid gray
+		&:last-child
+			border-bottom 0
+		.sizes-list
+			height 100% !important
+			p
+				background gris_claro
+			input
+				width 70%
+				height 1.7em
+				border 1px solid gray
+				position relative 
+				top 1px
+	.sizes
+		display flex
+		flex-direction column
+		
+		&-title
+			display flex
+			justify-content center
+			align-items center
+			height 30px
+			border-bottom 1px solid gris_claro
+			&-item
+				margin 0 20px
+			span.fa
+				cursor pointer
+				
+		.secton
+			margin 0
+			overflow hidden
+			max-width 800px
+			padding-top 1px
+			.sizes-list
+				display flex
+				height 30px
+				position relative
+				transition .5s
+				&:last-child
+					border-bottom 0px solid gray
+				&-item
+					margin 0
+					width 100px
+					height 100%
+					border-bottom 1px solid gray
+					
+					p
+						margin 0
+						width 100px
+						height 100%
+						display flex
+						justify-content center
+						align-items center
+						background gris_claro
+						span
+							margin 0
+							width 50%
+							height 100%
+							display flex
+							justify-content center
+							align-items center
+							border-right 1px solid gray
+						input
+							width 70%
+							height 60%
+							border 1px solid gray
+					&:last-child
+						span
+							&:last-child 
+								border 0
+							
+.form
+	margin 0
+	&-actions
+		margin 40px auto
+					
+				
+
+// OOCSS
+
+input,textarea,select, button
+	outline 0
+.absolute
+	position absolute
+	left 0
+	top 0
+	
+.relative
+	position relative
+.container
+	max-width 1000px
+	padding 0 1em
+	margin-left auto
+	margin-right auto
+.flex
+	display flex
+
+.flex-between
+	justify-content space-between
+
+.flex-middle
+	align-items center
+	
+.flex-center
+	justify-content center
+	
+.flex-column
+	flex-direction column
+.uppercase
+	text-transform uppercase
+
+
+.border
+	border 1px solid #d3d3d3
+
+.btn
+	appearance none
+	display flex 
+	align-items center
+	justify-content center
+	padding 8px 15px
+	border-radius 2px
+	border 1px solid transparent
+	cursor pointer
+	&-dark
+		background #000
+		color white
+	&-blue
+		background #029ded
+		color white
+
+.border-red
+	border 1px solid #f00
+.hide
+	display none
+
+.cell
+	padding 3px
+	background gris_claro
+	max-width 80px
+	
+
+.margin0
+	margin 0
+	
+.text-center
+	text-align center

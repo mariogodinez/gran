@@ -1,0 +1,12 @@
+
+
+@media screen and (min-width: 768px){
+	.right .header{
+		justify-content:flex-start;
+	}
+
+	.right .header .header-title{
+		display: inline-block;
+		margin: 0 2px 0 20px;
+	}
+}
