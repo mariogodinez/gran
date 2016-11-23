@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">	
 </head>
 <body>
-	<section id="main-container">
+	<section id="main-container" >
 		<header id="main-header">
 			<div class="container flex flex-between flex-middle">
 				<h1>Gran Via</h1>
@@ -19,7 +19,7 @@
 			</div>
 		</header>
 
-		<section class="container table-container">
+		<section class="container table-container table-1">
 			<header class="table-container-header flex flex-between flex-middle">
 				<h2 class="table-container-header-title uppercase">Hoja de relacion en blanco</h2>
 				<button class="btn btn-dark">Guardar relaciones</button>
@@ -81,7 +81,7 @@
 						<h4 class="header-title uppercase">Tallas de:</h4>
 						<div class="header-select">
 							<select name="" id="" class="btn">
-								<option value="">Tallas</option>
+								<option value="">Tipos</option>
 								<option value="">Calzado caballero</option>
 								<option value="">Ross</option>
 								<option value="">Sumatti</option>
@@ -95,7 +95,7 @@
 					<section class="sizes">
 						<div class="sizes-title">
 							<span class="fa fa-chevron-left" v-on:click="moveLeft"></span>
-							<h3 class="sizes-title-item">Tallas</h3>
+							<h3 class="sizes-title-item uppercase">Tallas</h3>
 							<span class="fa fa-chevron-right" v-on:click="moveRight"></span>
 						</div>
 						<section class="secton">
@@ -287,11 +287,282 @@
 
 					<div class="form-actions">
 						<div class="flex flex-between">
-							<button class="btn" id="addButton" v-on:click="addRow">+</button>
+							<button class="btn" id="addButton" v-on:click="addRow">
+								<span class="fa fa-plus"></span>
+							</button>
 							<button class="btn btn-dark">Guardar relaciones</button>
 						</div>
-						<div class="flex flex-center">
+						<div class="flex flex-center margin20">
 							<button class="btn btn-blue">Nueva Tabla/Marca</button>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+
+
+		<section class="container table-container table-2">
+			<header class="table-container-header flex flex-between flex-middle">
+				<h2 class="table-container-header-title uppercase">Hoja de relacion en blanco</h2>
+				<button class="btn btn-dark">Guardar relaciones</button>
+			</header>
+			<article class="table border flex">
+				<div class="table-left">
+					<header class="table-left-header">
+						<input type="text" class="table-left-header-input" placeholder="MARCA">
+					</header>
+					<div class="info flex">
+						<div class="info-item">
+							<p class="uppercase">
+								<span>Modelo</span>
+							</p>
+						</div>
+						<div class="info-item">
+							<p class="uppercase">
+								<span>Sku</span>
+							</p>
+						</div>
+						<div class="info-item">
+							<p class="uppercase">
+								<span>Variedad</span>
+							</p>
+						</div>
+						<div class="info-item">
+							<p class="uppercase">
+								<span>Total pares</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="flex" id="info-data" v-for="item in items">
+						<div class="info-item">
+							<p class="uppercase">
+								{{item.modelo}}
+							</p>
+						</div>
+						<div class="info-item">
+							<p class="uppercase">
+								{{item.sku}}
+							</p>
+						</div>
+						<div class="info-item">
+							<p class="uppercase">
+								{{item.variedad}}
+							</p>
+						</div>
+						<div class="info-item">
+							<p class="uppercase">
+								{{item.stock}}
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="right">
+					<header class="header flex flex-middle">
+						<h4 class="header-title uppercase">Tallas de:</h4>
+						<div class="header-select">
+							<select name="" id="" class="btn">
+								<option value="">Tipos</option>
+								<option value="">Calzado caballero</option>
+								<option value="">Ross</option>
+								<option value="">Sumatti</option>
+								<option value="">Alegri</option>
+							</select>
+							<span class="header-select-icon fa fa-chevron-down"></span>
+						</div>
+					</header>
+
+					
+					<section class="sizes">
+						<div class="sizes-title">
+							<span class="fa fa-chevron-left" v-on:click="moveLeft"></span>
+							<h3 class="sizes-title-item uppercase">Tallas</h3>
+							<span class="fa fa-chevron-right" v-on:click="moveRight"></span>
+						</div>
+						<section class="secton">
+							<div class="sizes-list" v-bind:style="{ right: right + 'px' }">
+							<div class="sizes-list-item">
+								<p>
+									<span>4</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>5</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>6</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>7</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>8</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>9</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>10</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>11</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>12</span>
+									<span>-</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>13</span>
+									<span>-</span>
+								</p>
+							</div>
+						</div>
+
+						<section class="sizes" id="sizes-data" v-for="item in items">
+						<article class="sizes-list" v-bind:style="{ right: right + 'px' }">
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+							<div class="sizes-list-item">
+								<p>
+									<span>
+										4
+									</span>
+									<span>
+										4
+									</span>
+								</p>
+							</div>
+
+						</article>
+					</section>
+						</section>
+						
+
+					</section>
+					
+
+				</div>
+				
+			</article>
+			<article class="full">
+				<div class="form">
+					<div class="leftData">
+						<div class="leftData-list">
+							
 						</div>
 					</div>
 				</div>

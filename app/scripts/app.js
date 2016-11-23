@@ -1,6 +1,54 @@
 (function(){
 	var items = [
-	{id:0},{id:1},{id:2},{id:3},{id:4},{id:5},{id:6}
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-38964Y',
+			variedad: 'Airnata',
+			stock:48
+		},
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-38964Y',
+			variedad: 'lemon',
+			stock:48
+		},
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-45964Y',
+			variedad: 'Rose',
+			stock:48
+		},
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-34564Y',
+			variedad: 'Purple',
+			stock:48
+		},
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-38964Y',
+			variedad: 'Airnata',
+			stock:48
+		},
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-38964Y',
+			variedad: 'Airnata',
+			stock:48
+		},
+		{
+			id:001,
+			modelo: 'FRP-PARIGI',
+			sku: 'PRG-38964Y',
+			variedad: 'Airnata',
+			stock:48
+		}
 	];
 	var item = {}
 
@@ -21,9 +69,9 @@
 				
 			},
 			moveRight: function(){
-				
+				if(this.right < 850){
 					this.right += 100;
-				
+				}
 			}
 		}
 	})

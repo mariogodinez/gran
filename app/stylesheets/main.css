@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 .table-left {
-  width: 250px;
+  width: 220px;
 }
 .table-left-header {
   background: #f4f3f3;
@@ -39,8 +39,8 @@ body {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  border-bottom: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d1;
+  border-right: 1px solid #d3d3d1;
 }
 .table-left-header-input {
   width: 90%;
@@ -54,7 +54,7 @@ body {
 }
 .info-item {
   width: 70px;
-  border-right: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d1;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -92,25 +92,25 @@ body {
 #info-data {
   width: 100%;
   height: 2em;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #d3d3d1;
 }
 #info-data:last-child {
   border-bottom: 0;
 }
 #info-data .info-item {
-  border-right: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d1;
 }
 #info-data .info-item p {
   background: #f4f3f3;
 }
 #info-data .info-item p input {
-  border: 1px solid #808080;
+  border: 1px solid #d3d3d1;
   width: 80%;
   height: 60%;
-  border: 1px solid #808080;
+  border: 1px solid #d3d3d1;
 }
 #info-data .info-item:last-child {
-  width: 3.2em;
+  width: 3.1em;
 }
 .right {
   margin: 0;
@@ -160,7 +160,7 @@ body {
 }
 .right #sizes-data {
   height: 2em !important;
-  border-bottom: 1px solid #808080;
+  border-top: 1px solid #d3d3d1;
 }
 .right #sizes-data:last-child {
   border-bottom: 0;
@@ -174,9 +174,7 @@ body {
 .right #sizes-data .sizes-list input {
   width: 70%;
   height: 1.7em;
-  border: 1px solid #808080;
-  position: relative;
-  top: 1px;
+  border: 1px solid #d3d3d1;
 }
 .right .sizes {
   display: -webkit-box;
@@ -215,7 +213,7 @@ body {
   border-bottom: 1px solid #f4f3f3;
 }
 .right .sizes-title-item {
-  margin: 0 20px;
+  margin: 0 3px;
 }
 .right .sizes-title span.fa {
   cursor: pointer;
@@ -224,7 +222,6 @@ body {
   margin: 0;
   overflow: hidden;
   max-width: 800px;
-  padding-top: 1px;
 }
 .right .sizes .secton .sizes-list {
   display: -webkit-box;
@@ -242,13 +239,13 @@ body {
   transition: 0.5s;
 }
 .right .sizes .secton .sizes-list:last-child {
-  border-bottom: 0px solid #808080;
+  border-bottom: 0px solid #d3d3d1;
 }
 .right .sizes .secton .sizes-list-item {
   margin: 0;
   width: 100px;
   height: 100%;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #d3d3d1;
 }
 .right .sizes .secton .sizes-list-item p {
   margin: 0;
@@ -272,7 +269,7 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background: #f4f3f3;
+  background: #fff;
 }
 .right .sizes .secton .sizes-list-item p span {
   margin: 0;
@@ -296,12 +293,12 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  border-right: 1px solid #808080;
+  border-right: 1px solid #d3d3d1;
 }
 .right .sizes .secton .sizes-list-item p input {
   width: 70%;
   height: 60%;
-  border: 1px solid #808080;
+  border: 1px solid #d3d3d1;
 }
 .right .sizes .secton .sizes-list-item:last-child span:last-child {
   border: 0;
@@ -328,7 +325,7 @@ button {
 }
 .container {
   max-width: 1000px;
-  padding: 0 1em;
+  padding: 0 0.2em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -376,7 +373,7 @@ button {
   text-transform: uppercase;
 }
 .border {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #d3d3d1;
 }
 .btn {
   -webkit-appearance: none;
@@ -427,6 +424,9 @@ button {
 }
 .margin0 {
   margin: 0;
+}
+.margin20 {
+  margin: 20px;
 }
 .text-center {
   text-align: center;
