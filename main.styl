@@ -1,0 +1,272 @@
+@import 'nib';
+
+gris_claro = #f4f3f3
+gris_border = #d3d3d1
+
+body
+	margin 0
+	padding 0
+	font-size 16px
+	font-family helvetica
+
+#main-header
+	background #000
+	color white
+	font-size 1.2em
+
+#main-container
+	font-size 1em
+	
+.table-container
+	margin 80px auto
+
+.table
+	margin 0
+	border 1px solid gris_border
+	&-left
+		width 220px
+		&-header
+			background gris_claro
+			width 99.5%
+			height 2.5em
+			display flex
+			align-items center
+			justify-content center
+			border-bottom 1px solid gris_border
+			border-right 1px solid gris_border
+			&-item
+				width 90%
+				height 100%
+				height 20px
+				font-style italic
+				font-size .8em
+
+.table-left-info
+	width 100%
+	height 60px
+	border-bottom 1px solid gris_claro
+	&-item
+		width 70px
+		border-right 1px solid gris_border
+		display flex
+		p
+			margin 0
+			display flex
+			justify-content center
+			align-items center
+			text-align center
+			font-size .7em
+			width 100%
+		&:last-child 
+			width 50px
+			
+
+
+#info-data
+	width 100%
+	height 2em
+	border-bottom 1px solid gris_border
+	&:last-child
+		border-bottom 0
+	.table-left-info-item
+		border-right 1px solid gris_border
+		p
+			background gris_claro
+			input
+				border 1px solid gris_border
+				width 80%
+				height 60%
+				border 1px solid gris_border
+	
+		&:last-child 
+			width 3.1em
+
+.table-right
+	margin 0
+	width 100%
+	overflow hidden
+	&-header
+		margin 0
+		background gris_claro
+		width 100%
+		height 2.5em
+		display flex
+		align-items center
+		justify-content center
+		border-top 0
+		border-left 0
+		&-title
+			display none
+			margin 0
+	#sizes-data
+		height 2em !important
+		border-top 1px solid gris_border
+		&:last-child
+			border-bottom 0
+		.sizes-list
+			height 100% !important
+			p
+				background gris_claro
+				font-size .9em
+			input
+				width 70%
+				height 1.7em
+				border 1px solid gris_border
+				
+	&-sizes
+		display flex
+		flex-direction column
+		&-title
+			display flex
+			justify-content center
+			align-items center
+			height 30px
+			border-bottom 1px solid gris_border
+			&-item
+				margin 0 3px
+				font-size .8em
+			span.fa
+				cursor pointer
+				
+		.rows
+			margin 0
+			overflow hidden
+			max-width 800px
+			.sizes-list
+				display flex
+				height 30px
+				position relative
+				transition .5s
+				
+				&-item
+					margin 0
+					width 100px
+					height 100%
+					border-bottom 1px solid gris_border
+					
+					p
+						margin 0
+						width 100px
+						height 100%
+						display flex
+						justify-content center
+						align-items center
+						background white
+						span
+							margin 0
+							width 50%
+							height 100%
+							display flex
+							justify-content center
+							align-items center
+							border-right 1px solid gris_border
+						input
+							width 70%
+							height 60%
+							border 1px solid gris_border
+
+						
+							
+							
+.form
+	margin 0
+	&-actions
+		margin 40px auto
+					
+				
+
+// OOCSS
+input,textarea,select, button
+	outline 0
+.absolute
+	position absolute
+	left 0
+	top 0
+	
+.relative
+	position relative
+.container
+	max-width 1050px
+	padding 0 .2em
+	margin-left auto
+	margin-right auto
+.flex
+	display flex
+
+.flex-between
+	justify-content space-between
+
+.flex-middle
+	align-items center
+	
+.flex-center
+	justify-content center
+	
+.flex-column
+	flex-direction column
+.uppercase
+	text-transform uppercase
+
+
+.border
+	border 1px solid gris_border
+
+.btn
+	appearance none
+	display flex 
+	align-items center
+	justify-content center
+	padding 8px 15px
+	border-radius 2px
+	border 1px solid transparent
+	cursor pointer
+	&-dark
+		background #000
+		color white !important
+	&-blue
+		background #029ded
+		color white
+	&-gray
+		background #d8d8d8
+		color #000
+.hide
+	display none
+
+.mySelect
+	position relative
+	&-icon
+		position absolute 
+		top 6px
+		right 5px
+.mySearch
+	position relative
+	input
+		width 190px
+		height 25px
+		padding-left 10px
+		display inline-block
+		font-style italic
+		border-radius 3px
+		border 1px solid gris_border
+		&:focus
+			box-shadow 0 0 20px #ddd
+	&-icon
+		position absolute 
+		top 6px
+		right 8px
+		color #333
+
+.margin0
+	margin 0
+.margin20
+	margin 20px
+.margin0-20
+	margin 0 20px
+	
+.text-center
+	text-align center
+.text-left
+	text-align left
+
+.color-gray
+	color gray !important
